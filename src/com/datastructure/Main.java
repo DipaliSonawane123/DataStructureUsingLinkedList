@@ -1,12 +1,28 @@
-/*Ability to create Linked List by adding 30 and 56   to 70
-        - Node with data 70 is First Created
-        - Next 30 is added to 70
-        - Finally 56 is added to 30
-        - LinkedList Sequence: 56->30->70*/
+/*Ability to create Linked List by appending 30 and 70 to 56
+- Node with data 56 is First Created
+- Next Append 30 to 56
+- Finally Append 70 to 30
+- LinkedList Sequence: 56->30->70*/
 package com.datastructure;
-public class Main {
-    public static void main(String[] args){System.out.println("Welcome to linkedList DataStructure Program");
-        Operation.addDataAtStart();
 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Welcome to linkedList DataStructure Program");
+        System.out.println("Welcome to linkedList DataStructure Program");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter 1 to add the data at the start"); // UC 2
+        System.out.println("Enter 2 to add the data at the End"); // UC 3
+        switch (scanner.nextInt()) {
+
+            case 1:
+                Operation.addDataAtStart();
+                break;
+            case 2:
+                Operation.addDataAtEnd();
+                break;
+
+        }
     }
 }
