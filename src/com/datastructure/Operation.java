@@ -32,6 +32,7 @@ public class Operation {
         System.out.println("After");
         linkedList.print();
     }
+    // create a method for delete first  element
     public static void pop(){
         LinkedList linkedList=new LinkedList();
        Node firstNode= linkedList.push(70);
@@ -46,6 +47,7 @@ public class Operation {
 
 
 }
+//method to delete last element
     public static void popLast(){
         LinkedList linkedList=new LinkedList();
         Node firstNode= linkedList.push(70);
@@ -57,5 +59,17 @@ public class Operation {
         linkedList.popLast();
         System.out.println("After");
         linkedList.print();
+
+}
+//method to search specific value
+public static void search(){
+    LinkedList linkedList=new LinkedList();
+    Node firstNode= linkedList.push(70);
+    Node secondNode= linkedList.push(30);
+    Node newNode=linkedList.push(56);
+    System.out.println("Before");
+    linkedList.print();
+    linkedList.search(30);
+
 }
 }
