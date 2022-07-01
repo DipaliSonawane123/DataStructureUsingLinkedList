@@ -18,6 +18,7 @@ public class Main {
         System.out.println("Enter 6 to search the data at  position "); // UC 7
         System.out.println("Enter 7 to insert  the data at index position "); // UC 8
         System.out.println("Enter 8 to delete 40 from list "); // UC 9
+
         switch (scanner.nextInt()) {
 
             case 1:
@@ -44,6 +45,8 @@ public class Main {
             case 8:
                 Operation.deleteAtIndexPosition();
                 break;
+
         }
+
     }
 }
